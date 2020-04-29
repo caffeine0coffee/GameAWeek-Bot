@@ -1,0 +1,3 @@
+//TODO
+30m
+debug this bot
