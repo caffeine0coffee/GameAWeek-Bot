@@ -60,6 +60,8 @@ async def loop():
 
 
 if __name__ == "__main__":
+    with open("access_token.txt") as fin:
+        token = fin.read()
     gaw_func.init()
     loop.start()
-    client.run("NzAyNjI5NDExNjg1NDAwNjU2.XqC2BQ.sjsCRCajVgSiYhrlCke_XrHKUO8")
+    client.run(token)
